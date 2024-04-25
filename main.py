@@ -233,7 +233,8 @@ def find_number(matrix, num):
 def display_menu(cursor_position):
     options = ["Play","Load", "Exit"]
     print("\n"*100)  # Clear the screen
-    print("Version 2.0 MEGA UPDATE!")
+    print("Echoes Of Eternity")
+    print("Version 2.1 MEGA UPDATE!")
     for index, option in enumerate(options):
         if index == cursor_position:
             print("►", option)
