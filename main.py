@@ -521,6 +521,7 @@ Characters:
     · Mateo
     · Manuel
     · Hernan
+    · Joel
 ''')
     char = input("Choose: ")
 
