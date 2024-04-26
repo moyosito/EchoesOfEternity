@@ -234,7 +234,7 @@ def display_menu(cursor_position):
     options = ["Play","Load", "Exit"]
     print("\n"*100)  # Clear the screen
     print("Echoes Of Eternity")
-    print("Version 2.2 MEGA UPDATE!")
+    print("Version 2.3 UPDATE!")
     for index, option in enumerate(options):
         if index == cursor_position:
             print("►", option)
@@ -539,7 +539,61 @@ Characters:
     elif char == "Hernan":
         health = 50
         damage = 15
+    elif char == "Joel":
+        items = ["card"]
+        health = 40
+        damgae = 10
+    num_items = random.randint(1, 3)import random
+            print("load")
+            
+        elif choice.lower() == "" and cursor_position == 2:
+            print("Exiting the game...")
+            break
+        elif choice.lower() == "up":
+            cursor_position = (cursor_position - 1) % 3
+        elif choice.lower() == "down":
+            cursor_position = (cursor_position + 1) % 3
+
+def choosecharacter():
+    global damage, coins, items, health, num_items, shop_items
+    print('''
+Characters:
+    · Pablo
+    · Mateo
+    · Manuel
+    · Hernan
+''')
+    char = input("Choose: ")
+
+    if char == "Pablo":
+        items = ["dice"]
+        damage = 10
+        health = 30
+    elif char == "Mateo":
+        items = ["holy_mantle"]
+        damage = 10
+        health = 20
+    elif char == "Manuel":
+        damage = 7
+        health = 40
+        coins = 100
+    elif char == "Hernan":
+        health = 50
+        damage = 15
+    elif char == "Joel":
+        items = ["card"]
+        health = 40
+        damgae = 10
     num_items = random.randint(1, 3)
+    shop_items = random.sample(possible_items, num_items)
+    clear()
+    start()
+
+
+if __name__ == "__main__":
+            main()
+
+
     shop_items = random.sample(possible_items, num_items)
     clear()
     start()
